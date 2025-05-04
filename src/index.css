@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add any custom global styles here */
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #4CBB17; /* Example active color */
+}
+
+@media print {
+  body > *:not([ref]) {
+    display: none !important;
+  }
+  [ref] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: white !important;
+  }
+}
